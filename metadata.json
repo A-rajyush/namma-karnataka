@@ -1,0 +1,6 @@
+{
+  "name": "Namma Karnataka Explorer",
+  "description": "AI-powered luxury Karnataka travel planning platform featuring an interactive 3D terrain and route map, personalized itinerary engine, real-time weather forecasts, cultural destination guides, and budget optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

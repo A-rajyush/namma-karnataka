@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  .theme-light {
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans Kannada', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Kannada', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --bg-page: #FAF9F5;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F3F1EC;
+    --bg-muted: #EAE7DF;
+    --text-primary: #141413;
+    --text-secondary: #4A4945;
+    --text-muted: #78766F;
+    --border-subtle: #E6E4DD;
+    --border-strong: #D4D1C7;
+    --accent-primary: #0F5338;
+    --accent-primary-hover: #0B3E2A;
+    --accent-soft: #E7F2EC;
+    --accent-text: #0F5338;
+  }
+
+  .theme-dark {
+    --bg-page: #0E100F;
+    --bg-surface: #161918;
+    --bg-subtle: #1D211F;
+    --bg-muted: #262B29;
+    --text-primary: #F3F2EE;
+    --text-secondary: #A8A69E;
+    --text-muted: #75746D;
+    --border-subtle: #262A28;
+    --border-strong: #363C39;
+    --accent-primary: #10B981;
+    --accent-primary-hover: #059669;
+    --accent-soft: rgba(16, 185, 129, 0.12);
+    --accent-text: #34D399;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+
+  .font-editorial {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Semantic Theme Utility Classes */
+.app-bg {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+}
+
+.surface-card {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.surface-subtle {
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.text-ink {
+  color: var(--text-primary);
+}
+
+.text-body {
+  color: var(--text-secondary);
+}
+
+.text-caption {
+  color: var(--text-muted);
+}
+
+.border-hairline {
+  border-color: var(--border-subtle);
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: #FFFFFF;
+}
+.theme-dark .btn-primary {
+  background-color: #10B981;
+  color: #091510;
+}
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+}
+
+.badge-accent {
+  background-color: var(--accent-soft);
+  color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
