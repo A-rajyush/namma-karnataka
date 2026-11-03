@@ -57,4 +57,7 @@ Text
 └──────────────────────────────────────────────────────────────────────────────┘
 Documented Verification & Commands:
 npm install — Install full-stack dependencies.
-npm run dev — Launch the Express + Vite full-stack serv
+npm run dev — Launch the Express + Vite full-stack server on http://localhost:3000.
+npm run test — Execute the Node test runner suite verifying the Karnataka itinerary planning engine.
+npm run lint & npm run build — Run TypeScript typechecking and production bundle compilation.
+
